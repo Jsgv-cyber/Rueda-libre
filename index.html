@@ -1,7 +1,106 @@
 <!DOCTYPE html>
-<html lang="es" ></html>
+<html lang="es">
 <head>
-<meta= "viewport">
-<h1> Rueda Libre | Alquiler de bicicletas en Medellin</h1>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
 </head>
+<body>
+
+    <!-- Encabezado del sitio-->
+<header> 
+    
+    <h1>Rueda Libre | Alquiler de bicicletas en Medellín</h1>
+    <p>Tu mejor opción para recorrer la ciudad sobre 2 ruedas</p>
+
+</header>
+
+    <!-- Contenido principal-->
+     <main>
+
+        <!-- Sección quienes somos--> 
+
+        <section id="quienes-somos">
+            <h2>Quiénes somos</h2>
+            <p>En <strong>Rueda Libre</strong> Somos apasionados por la movilidad sostenible en Medellín.
+            Ofrecemos el servicio de alquiler de bicicletas urbanas, de montaña y de ruta para que locales y turistas exploren
+        exploren la ciudad a su propio ritmo de forma ecológica y divertida</p>
+        </section>
+        
+     </main>
+
+     <!-- Sección tipos de bicicletas-->
+  <section id="catalogo">
+    <h2>Tipos de bicicletas</h2>
+    <p>Conoce los diferentes modelos que tenemos  disponibles para ti:</p>
+
+    <!-- Galeria de bicicletas-->
+     <div class="galeria">
+
+        <!-- Bicileta 1-->
+         <article class="Bici-card">
+            <img src="/img/Bicilceta 1.webp" alt="Bicicleta de montaña GW color negro">
+            <h3>MTB GW Negra</h3>
+            <p>Bicicleta de montaña con suspensión delantera, ideal para terreno variado y ciclovías exigentes.</p>
+
+         </article>
+
+         <!--Bicicleta 2-->
+         <article class="bici-card">
+            <img src="/img/Bicicleta 2.webp" alt="Bicicleta de montaña GW color beige">
+            <h3>MTB GW beige</h3>
+            <p>Modelo todoterreno cómodo y elegante para pasear por la ciudad con total suavidad.</p>
+        </article>
+
+        <!--Bicileta 3-->
+        <article class="Bici-card">
+            <img src="/img/Bicicleta 3.jpeg" alt="Bicielata de ruta color rojo y blanco">
+            <h3>Bicileta de ruta con un estilo unico</h3>
+            <p>Diseñada para velocidad y alto rendimiento sobre el asfalto. Perfecta para deportistas.</p>
+
+        </article>
+     </div>
+  </section>
+
+  <!--Sección de tarifas-->
+  <section id="tarifas">
+    <h2>Nuestras Tarifas</h2>
+    <p>Elige el plan que mejor se adapte a tu recorrido:</p>
+    <ul>
+        <li><strong>Hora adicional:</strong> $10.000 COP</li>
+        <li><strong>Medio dia (4 horas):</strong> $30.000 COP</li>
+        <li><strong>Dia completo (8 horas):</strong> $50.000 COP</li>
+    </ul>
+  </section>
+
+   <!--Sección de reserva / contacto-->
+   <section id="reserva">
+    <h2>Reserva tu bicicleta</h2>
+    <p>Completa tus datos y nos pondremos en contacto contigo para confirmar tu alquiler:</p>
+
+    <form>
+        <div>
+         <label for="nombre">Nombre completo:</label><br>
+         <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        </div>
+        <br>
+        <div>
+            <label for="bici-select">Selecciona el modelo:</label><br>
+            <select ir="bici-select" name="bici">
+                <option value="mtb-negra">MTB GW Negra</option>
+                <option value="mtb-beige">MTB GW beige</option>
+                <option value="ruta">Bicicleta estilo unico</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <label for="fecha">Feacha de alquiler:</label><br>
+            <input type="date" id="fecha" name="fecha" required>
+        </div>
+        <br>
+        <button type="submit">Enviar reserva</button>
+    </form>
+   </section>
+</body>
+</html>
