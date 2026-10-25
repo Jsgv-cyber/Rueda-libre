@@ -4,6 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
+    
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #eef3ee;
+        color: #26352b;
+    }
+
+    header {
+        background-color: #245c42;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    #catalogo {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .galeria {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .bici-card {
+        width: 250px;
+        padding: 15px;
+        background-color: white;
+        border: 1px solid #d5dfd6;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .imagen-bici {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 180px;
+        background-color: #f5f7f5;
+        border: 1px solid #dce4dc;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .imagen-bici img {
+        width: 200px;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+    .bici-card h3 {
+        color: #245c42;
+    }
+
+    @media (max-width: 600px) {
+        .bici-card {
+            width: 100%;
+            max-width: 280px;
+        }
+    }
+</style>
+
 </head>
 <body>
 
@@ -29,44 +100,44 @@
         
      </main>
 
-     <!-- Sección tipos de bicicletas-->
-  <section id="catalogo">
-    <h2>Tipos de bicicletas</h2>
-    <p>Conoce los diferentes modelos que tenemos  disponibles para ti:</p>
+    
+<div class="galeria">
 
-    <!-- Galeria de bicicletas-->
-     <div class="galeria">
+    <article class="bici-card">
+        <div class="imagen-bici">
+            <img src="/img/Bicilceta 1.webp"
+                 alt="Bicicleta de montaña GW color negro"
+                 width="200px">
+        </div>
 
-        <!-- Bicileta 1-->
-         <article class="Bici-card">
-            <div> style="display: flex; justify-content: center; gap: 15px; align-items: center;"
-        <img src="/img/Bicilceta 1.webp"  alt="Bicicleta de montaña GW color negro" width="200px">
-        
-     </div>
-            <h3>MTB GW Negra</h3>
-            <p>Bicicleta de montaña con suspensión delantera, ideal para terreno variado y ciclovías exigentes.</p>
+        <h3>MTB GW Negra</h3>
+        <p>Bicicleta de montaña con suspensión delantera, ideal para terreno variado y ciclovías exigentes.</p>
+    </article>
 
-         </article>
+    <article class="bici-card">
+        <div class="imagen-bici">
+            <img src="/img/Bicicleta 2.webp"
+                 alt="Bicicleta de montaña GW color beige"
+                 width="200px">
+        </div>
 
-         <!--Bicicleta 2-->
-         <article class="bici-card">
-             <div> style="display: flex; justify-content: center; gap: 15px; align-items: center;"
-        <img src="/img/Bicicleta 2.webp"  alt="Bicicleta de montaña GW color beige" width="200px">
-        
-     </div>
-            <h3>MTB GW beige</h3>
-            <p>Modelo todoterreno cómodo y elegante para pasear por la ciudad con total suavidad.</p>
-        </article>
+        <h3>MTB GW beige</h3>
+        <p>Modelo todoterreno cómodo y elegante para pasear por la ciudad con total suavidad.</p>
+    </article>
 
-        <!--Bicileta 3-->
-        <article class="Bici-card">
-                 <div> style="display: flex; justify-content: center; gap: 15px; align-items: center;"
-        <img src="/img/Bicicleta 3.jpeg"  alt="Bicielata de ruta color rojo y blanco" width="200px">
-            <h3>Bicileta de ruta con un estilo unico</h3>
-            <p>Diseñada para velocidad y alto rendimiento sobre el asfalto. Perfecta para deportistas.</p>
+    <article class="bici-card">
+        <div class="imagen-bici">
+            <img src="/img/Bicicleta 3.jpeg"
+                 alt="Bicicleta de ruta de color rojo y blanco"
+                 width="200px">
+        </div>
 
-        </article>
-     </div>
+        <h3>Bicicleta de ruta con un estilo único</h3>
+        <p>Diseñada para velocidad y alto rendimiento sobre el asfalto. Perfecta para deportistas.</p>
+    </article>
+
+</div>
+
 
     
 
